@@ -1,0 +1,24 @@
+{
+  "name": "rsnode2022q2-savelyev",
+  "version": "1.0.0",
+  "description": "File manager",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/VitaliSavelyev/rsnode2022Q2-savelyev.git"
+  },
+  "keywords": [
+    "nodejs"
+  ],
+  "author": "Vitali Savelyev",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/VitaliSavelyev/rsnode2022Q2-savelyev/issues"
+  },
+  "homepage": "https://github.com/VitaliSavelyev/rsnode2022Q2-savelyev#readme"
+}
