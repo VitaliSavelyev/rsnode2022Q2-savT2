@@ -1,5 +1,4 @@
 import { createTransformStream } from './createTransformStream.js';
-import * as fs from 'fs';
 
 
 async function createStreams() {

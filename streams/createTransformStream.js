@@ -1,13 +1,12 @@
 import { Transform } from 'stream';
 import { transformData } from './transformData.js';
-import { fileURLToPath } from "url";
 import { errorTypes } from '../constant/constants.js'
-import path from "path";
+import * as os from 'os'
+
 
 async function createTransformStream() {
   const transform = new Transform();
-  const __filename = fileURLToPath(import.meta.url);
-  let dirname = path.dirname(__filename);
+  let dirname = os.homedir();
   transform._transform = async (chunk, encoding, callback) => {
     const chunkToString = chunk.toString().trim().split(' ');
     let changes = await transformData(chunkToString, dirname);
